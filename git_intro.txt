@@ -1,0 +1,88 @@
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+
+$ git init
+Reinitialized existing Git repository in C:/Users/somug/OneDrive/Desktop/Git and Project - Summer Training/.git/
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   doc.txt
+        new file:   doc1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   doc.txt
+
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git add "doc,doc1"
+fatal: pathspec 'doc,doc1' did not match any files
+
+
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git commit -m "Intro -doc.txt"
+[master (root-commit) 8055f63] Intro -doc.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 doc.txt
+ create mode 100644 doc1.txt
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git log
+commit 8055f6326e0b56fd1a70f66e7c66042b247aba36 (HEAD -> master)
+Author: rohith <somugutturohithreddy2003@gmail.com>
+Date:   Sat Jun 24 11:29:01 2023 +0530
+
+    Intro -doc.txt
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   doc.txt
+        modified:   doc1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git add "doc.txt"
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   doc.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   doc1.txt
+
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git add "doc1.txt"
+
+somug@RohithReddy MINGW64 ~/OneDrive/Desktop/Git and Project - Summer Training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   doc.txt
+        modified:   doc1.txt
+
+
+
